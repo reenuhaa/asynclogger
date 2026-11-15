@@ -22,11 +22,13 @@ int main() {
 
 ## Build
 
-Requires a C++20 compiler.
+Requires a C++20 compiler and CMake.
 
 ```bash
-g++ -std=c++20 -Wall -Wextra -O2 -pthread -I. main.cpp -o asynclogger
-./asynclogger
+mkdir build && cd build
+cmake ..
+cmake --build .
+./telemetry
 ```
 
 ## Files
